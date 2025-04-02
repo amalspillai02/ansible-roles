@@ -1,0 +1,6 @@
+- name: ansible roles
+  hosts: alma2
+  roles:
+    - guiand888.ssh_hardening
+  vars:
+    ssh_allowed_group: ssh_admins

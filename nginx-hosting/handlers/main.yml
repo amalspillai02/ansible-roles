@@ -1,0 +1,10 @@
+---
+# handlers file for nginx-hosting
+- name: firewall
+  service:
+    name: firewalld
+    state: reloaded
+- name: restart nginx
+  service:
+    name: "{{pack}}"
+    state: restarted
